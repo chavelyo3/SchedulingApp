@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+   
+    
+   
+    <!--font-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+    </style>
+    <title>Work Day Scheduler</title>
+  </head>
+
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">scheduling made simple!</p><br>
+      <p class ="TDY" id="currentDate">date</p>
+      <p class ="TDY2" id="currentTime"> time</p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <main class ="container">
+      <!--7 AM -->
+      <article id="Hour-7" class="row time-block">
+        <section class="col-sm-1">
+          <p><h3>7<br>AM</h3></p>
+        </section>
+        <textarea id="7" class="col-sm-10 "></textarea>
+        <button class="btn col-sm-1 saveBtn" >
+        <img src ="assets/saveBtn.png" alt= "save button" width="35" height ="35"></button></article>
+
+      <!--8 AM-->
+      <article id="Hour-8" class="row time-block">
+        <section class="col-sm-1">
+          <p><h3>8<br>AM</h3></p>
+        </section>
+        <textarea id="8" class="col-sm-10 description"></textarea>
+        <button class="btn col-sm-1 saveBtn" >
+        <img src ="assets/saveBtn.png" alt= "save button" width="35" height ="35 "></button>
+      </article>
+      <!--9 AM-->
+      <article id="Hour-9" class="row time-block">
+        <section class="col-sm-1">
+          <p><h3>9<br>AM</h3></p>
+        </section>
+        <textarea id="9" class="col-sm-10 description"></textarea>
+        <button class="btn col-sm-1 saveBtn" >
+        <img src ="assets/saveBtn.png" alt= "save button" width="35" height ="35 "></button>
+      </article>
+      <!--10 AM-->
+      <article id="Hour-10" class="row time-block">
+        <section class="col-sm-1">
+          <p><h3>10<br>AM</h3></p>
+        </section>
+        <textarea id="10" class="col-sm-10 description"></textarea>
+        <button class="btn col-sm-1 saveBtn" >
+        <img src ="assets/saveBtn.png" alt= "save button" width="35" height ="35 "></button>
+      </article>
+      <!--11AM-->
+      <article id="Hour-11" class="row time-block">
+        <section class="col-sm-1">
+          <p><h3>10<br>AM</h3></p>
+        </section>
+        <textarea id="11" class="col-sm-10 description"></textarea>
+        <button class="btn col-sm-1 saveBtn" >
+        <img src ="assets/saveBtn.png" alt= "save button" width="35" height ="35 "></button>
+      </article>
+      <!--12 PM-->
+      <article id="Hour-12" class="row time-block">
+        <section class="col-sm-1">
+          <p><h3>12<br>PM</h3></p>
+        </section>
+        <textarea id="12" class="col-sm-10 description"></textarea>
+        <button class="btn col-sm-1 saveBtn">
+        <img src ="assets/saveBtn.png" alt= "save button" width="35" height ="35 "></button>
+      </article>
+      <!--1 PM-->
+      <article id="Hour-1" class="row time-block">
+        <section class="col-sm-1">
+          <p><h3>1<br>PM</h3></p>
+        </section>
+        <textarea id="1" class="col-sm-10 description"></textarea>
+        <button class="btn col-sm-1 saveBtn" >
+        <img src ="assets/saveBtn.png" alt= "save button" width="35" height ="35 "></button>
+      </article>
+      <!--2 PM-->
+      <article id="Hour-2" class="row time-block">
+        <section class="col-sm-1">
+          <p><h3>2<br>PM</h3></p>
+        </section>
+        <textarea id="2" class="col-sm-10 description"></textarea>
+        <button class="btn col-sm-1 saveBtn" >
+        <img src ="assets/saveBtn.png" alt= "save button" width="35" height ="35 "></button>
+      </article>
+      <!--3 PM-->
+      <article id="Hour-3" class="row time-block">
+        <section class="col-sm-1">
+          <p><h3>3<br>PM</h3></p>
+        </section>
+        <textarea id="3" class="col-sm-10 description"></textarea>
+        <button class="btn col-sm-1 saveBtn" >
+        <img src ="assets/saveBtn.png" alt= "save button" width="35" height ="35 "></button>
+      </article>
+
+  </main></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+    <script src="moment.js"></script>
+    
+  </body>
+</html>
+
