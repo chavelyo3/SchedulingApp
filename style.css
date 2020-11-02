@@ -75,7 +75,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.TDY, .TDY2 {
+.Date,.Time {
   background-color: hotpink;
   margin: 3px;
   padding: 3px;
