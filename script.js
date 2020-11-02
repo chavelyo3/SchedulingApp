@@ -31,11 +31,8 @@ $(document).ready(function () {
   //
   function dayTracker() {
     let currentHour = moment().hours();
-    console.log(currentTiempo);
     $(".time-block").each(function () {
-      console.log($(this));
       let timeHour = parseInt($(this).attr("id").split("-")[1]);
-
       if (timeHour < currentTiempo) {
         $(this).addClass("past");
       } else if (timeHour === currentTiempo) {

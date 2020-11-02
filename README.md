@@ -6,8 +6,7 @@ this weeks homework was to create a day 9 hour scheduler using local storage and
 <br><br><br>
 https://chavelyo3.github.io/SchedulingApp/
 <br>
-<img width="1792" alt="screenshot 1" src="https://user-images.githubusercontent.com/69928551/97539063-60cd0a00-198f-11eb-8289-25c23c578928.png"><br>
-<img width="1774" alt="Screen Shot 2020-10-29 at 2 21 35 AM" src="https://user-images.githubusercontent.com/69928551/97538993-4430d200-198f-11eb-9c3f-f067db6272af.png">
+<img width="1234" alt="scheduler1" src="https://user-images.githubusercontent.com/69928551/97832088-9461aa00-1c97-11eb-9426-0306b9e2132d.png">
 
 
 <br><br><br>
