@@ -9,4 +9,4 @@ https://chavelyo3.github.io/SchedulingApp/
 Write in your date to date task and save!
 <br>
 <h1>Credits:</h1> <br>
-U of M coder
+U of M coder and tutor!
