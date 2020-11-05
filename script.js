@@ -1,22 +1,34 @@
 $(document).ready(function () {
-  //hours to be saved to local storage and getting them
-  $("sevenAm").val(localStorage.getItem("7"));
-  $("eightAm").val(localStorage.getItem("8"));
-  $("nineAm").val(localStorage.getItem("9"));
-  $("tenAm").val(localStorage.getItem("10"));
-  $("elevenAm").val(localStorage.getItem("11"));
-  $("twelvePm").val(localStorage.getItem("12"));
-  $("onePm").val(localStorage.getItem("13"));
-  $("twoPm").val(localStorage.getItem("14"));
-  $("threePm").val(localStorage.getItem("15"));
+
+  // hours to local storage
+  $("#7").val(localStorage.getItem("Hour-7"));
+  
+  $("#8").val(localStorage.getItem("Hour-8"));
+  
+  $("#9").val(localStorage.getItem("Hour-9"));
+  
+  $("#10").val(localStorage.getItem("Hour-10"));
+  
+  $("#11").val(localStorage.getItem("Hour-11"));
+  
+  $("#12").val(localStorage.getItem("Hour-12"));
+  
+  $("#13").val(localStorage.getItem("Hour-13"));
+  
+  $("#14").val(localStorage.getItem("Hour-4"));
+  
+  $("#15").val(localStorage.getItem("Hour-15"));
+ 
 
   // save button local storage
   $(".saveBtn").on("click", function () {
-    let task = $(this).siblings(".describtion").val();
+    let task = $(this).parent().attr("id")
     console.log($(this));
-    let time = $(this).parent().attr("id");
-    localStorage.setItem(time, task);
-    console.log(time, task);
+    let time = $(this).prev().val().trim();
+    localStorage.setItem(task, time);
+    console.log(task, time);
+    
+    
   });
 
   let m = moment();
@@ -27,25 +39,32 @@ $(document).ready(function () {
   // current time
   let currentTimeEl = document.getElementById("currentTiempo");
   currentTimeEl.innerHTML = m.format("LT");
+  
+  var currentTiempo = m.format("H")
+  
 
   //
   function dayTracker() {
-    let currentHour = moment().hours();
     $(".time-block").each(function () {
-      let timeHour = parseInt($(this).attr("id").split("-")[1]);
-      if (timeHour < currentTiempo) {
-        $(this).addClass("past");
-      } else if (timeHour === currentTiempo) {
-        $(this).removeClass("past");
-        $(this).addClass("present");
+      console.log(this.childNodes[3].getAttribute("id"))
+      //console.log($(this))
+      let timeHour = parseInt(this.childNodes[3].getAttribute("id"));
+      if (timeHour == currentTiempo) {
+        this.childNodes[3].setAttribute("class", "col-sm-10 present")
+      } if (timeHour < currentTiempo) {
+      
+        this.childNodes[3].setAttribute("class", "col-sm-10 past")
       }
       if (timeHour > currentTiempo) {
-        $(this).removeClass("past");
-        $(this).removeClass("present");
-        $(this).addClass("future");
+        this.childNodes[3].setAttribute("class", "col-sm-10 future");
       }
+
+     
+    
     });
   }
 
   dayTracker();
 });
+
+
