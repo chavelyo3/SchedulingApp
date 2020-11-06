@@ -40,7 +40,7 @@ $(document).ready(function () {
   let currentTimeEl = document.getElementById("currentTiempo");
   currentTimeEl.innerHTML = m.format("LT");
   
-  var currentTiempo = m.format("H")
+  let currentTiempo = m.format("H")
   
 
   //
